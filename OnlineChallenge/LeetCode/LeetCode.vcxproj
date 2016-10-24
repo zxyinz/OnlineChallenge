@@ -64,6 +64,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ProblemSet.h" />
+    <ClInclude Include="ProblemSet\MaxDepthOfBinaryTree.h" />
+    <ClInclude Include="ProblemSet\MaxPointsOnALine.h" />
+    <ClInclude Include="ProblemSet\ProductExceptSelf.h" />
+    <ClInclude Include="ProblemSet\SkyLine.h" />
+    <ClInclude Include="RelyOn.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Leetcode_Main.cpp" />
+    <ClCompile Include="RelyOn.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
