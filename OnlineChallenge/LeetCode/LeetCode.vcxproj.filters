@@ -36,6 +36,15 @@
     <ClInclude Include="ProblemSet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ProblemSet\MinStack.h">
+      <Filter>Header Files\ProblemSet</Filter>
+    </ClInclude>
+    <ClInclude Include="ProblemSet\FirstBadVersion.h">
+      <Filter>Header Files\ProblemSet</Filter>
+    </ClInclude>
+    <ClInclude Include="ProblemSet\CompareVersionNumbers.h">
+      <Filter>Header Files\ProblemSet</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="RelyOn.cpp">

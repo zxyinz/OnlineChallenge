@@ -65,8 +65,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ProblemSet.h" />
+    <ClInclude Include="ProblemSet\CompareVersionNumbers.h" />
+    <ClInclude Include="ProblemSet\FirstBadVersion.h" />
     <ClInclude Include="ProblemSet\MaxDepthOfBinaryTree.h" />
     <ClInclude Include="ProblemSet\MaxPointsOnALine.h" />
+    <ClInclude Include="ProblemSet\MinStack.h" />
     <ClInclude Include="ProblemSet\ProductExceptSelf.h" />
     <ClInclude Include="ProblemSet\SkyLine.h" />
     <ClInclude Include="RelyOn.h" />
