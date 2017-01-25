@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LeetCode", "LeetCode\LeetCode.vcxproj", "{DA17A1E6-4C1E-4428-9F3E-D27696E7E6A4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kaggle", "Kaggle\Kaggle.vcxproj", "{8FD298C7-0505-468A-A77B-54500D56951C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -15,6 +17,10 @@ Global
 		{DA17A1E6-4C1E-4428-9F3E-D27696E7E6A4}.Debug|Win32.Build.0 = Debug|Win32
 		{DA17A1E6-4C1E-4428-9F3E-D27696E7E6A4}.Release|Win32.ActiveCfg = Release|Win32
 		{DA17A1E6-4C1E-4428-9F3E-D27696E7E6A4}.Release|Win32.Build.0 = Release|Win32
+		{8FD298C7-0505-468A-A77B-54500D56951C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8FD298C7-0505-468A-A77B-54500D56951C}.Debug|Win32.Build.0 = Debug|Win32
+		{8FD298C7-0505-468A-A77B-54500D56951C}.Release|Win32.ActiveCfg = Release|Win32
+		{8FD298C7-0505-468A-A77B-54500D56951C}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
