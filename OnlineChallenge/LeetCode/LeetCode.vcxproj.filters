@@ -16,6 +16,12 @@
     <Filter Include="Header Files\ProblemSet">
       <UniqueIdentifier>{0cb00157-12d9-416a-a5bd-92c78076fc33}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\RelyOn">
+      <UniqueIdentifier>{7f7f0b8b-096b-419c-9e31-2c0ec5a94950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RelyOn">
+      <UniqueIdentifier>{8cf6f33e-21f4-4134-888d-0f846aac576e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="RelyOn.h">
@@ -45,13 +51,25 @@
     <ClInclude Include="ProblemSet\CompareVersionNumbers.h">
       <Filter>Header Files\ProblemSet</Filter>
     </ClInclude>
+    <ClInclude Include="RelyOn\cTerminal.h">
+      <Filter>Header Files\RelyOn</Filter>
+    </ClInclude>
+    <ClInclude Include="RelyOn\cSolutionContainer.h">
+      <Filter>Header Files\RelyOn</Filter>
+    </ClInclude>
+    <ClInclude Include="RelyOn\StdHeader.h">
+      <Filter>Header Files\RelyOn</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RelyOn.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Leetcode_Main.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RelyOn\cTerminal.cpp">
+      <Filter>Source Files\RelyOn</Filter>
+    </ClCompile>
+    <ClCompile Include="RelyOn\cSolutionContainer.cpp">
+      <Filter>Source Files\RelyOn</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -13,6 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DA17A1E6-4C1E-4428-9F3E-D27696E7E6A4}</ProjectGuid>
     <RootNamespace>LeetCode</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -73,10 +74,14 @@
     <ClInclude Include="ProblemSet\ProductExceptSelf.h" />
     <ClInclude Include="ProblemSet\SkyLine.h" />
     <ClInclude Include="RelyOn.h" />
+    <ClInclude Include="RelyOn\StdHeader.h" />
+    <ClInclude Include="RelyOn\cSolutionContainer.h" />
+    <ClInclude Include="RelyOn\cTerminal.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Leetcode_Main.cpp" />
-    <ClCompile Include="RelyOn.cpp" />
+    <ClCompile Include="RelyOn\cSolutionContainer.cpp" />
+    <ClCompile Include="RelyOn\cTerminal.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

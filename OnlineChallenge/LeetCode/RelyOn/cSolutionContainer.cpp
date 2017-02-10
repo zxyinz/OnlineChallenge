@@ -1,15 +1,14 @@
-#include"RelyOn.h"
+#include"cSolutionContainer.h"
 using namespace std;
-using namespace Leetcode;
-cSolutionList::cSolutionList()
+cSolutionContainer::cSolutionContainer()
 {
 
 }
-cSolutionList::~cSolutionList()
+cSolutionContainer::~cSolutionContainer()
 {
 
 }
-void cSolutionList::_PrintMaxMatchList(const string &strName) const
+void cSolutionContainer::_PrintMaxMatchList(const string &strName) const
 {
 	list<string> MatchList;
 	for (auto &pPtr : this->m_ObjList)
@@ -26,55 +25,55 @@ void cSolutionList::_PrintMaxMatchList(const string &strName) const
 	}
 	::cout << "\r\n";
 }
-bool cSolutionList::iCreateSolution(cSolutionObj* pObj)
+bool cSolutionContainer::iCreateSolution(cSolutionObj* pObj)
 {
 	//Find solution by name
-	if (pObj == nullptr){ return false; }
+	if (pObj == nullptr) { return false; }
 
 	const string &strName = pObj->iGetName();
-	for (const auto &pPtr : this->m_ObjList){ if (strName == pPtr->iGetName()){ return false; } }
+	for (const auto &pPtr : this->m_ObjList) { if (strName == pPtr->iGetName()) { return false; } }
 
 	this->m_ObjList.push_back(pObj);
 }
-void cSolutionList::iDeleteSolution(const string &strName)
+void cSolutionContainer::iDeleteSolution(const string &strName)
 {
-	for (list<cSolutionObj*>::iterator It = this->m_ObjList.begin(); It != this->m_ObjList.end();It++)
-	{ 
+	for (list<cSolutionObj*>::iterator It = this->m_ObjList.begin(); It != this->m_ObjList.end(); It++)
+	{
 		if (strName == (*It)->iGetName())
-		{ 
+		{
 			delete (*It);
 			(*It) = nullptr;
 
 			this->m_ObjList.erase(It);
 			return;
-		} 
+		}
 	}
 
 	//Solution not found, print max-match
 	this->_PrintMaxMatchList(strName);
 }
-void cSolutionList::iRun(const string &strName)
+void cSolutionContainer::iRun(const string &strName)
 {
 	//Find solution by name
 	for (auto &pPtr : this->m_ObjList)
-	{ 
+	{
 		if (strName == pPtr->iGetName())
-		{ 
-			pPtr->operator()(); 
-			return; 
-		} 
+		{
+			pPtr->operator()();
+			return;
+		}
 	}
 
 	//Solution not found, print max-match
 	this->_PrintMaxMatchList(strName);
 }
-void cSolutionList::iPrintDesc(const string &strName, const string &strPrefix) const
+void cSolutionContainer::iPrintDesc(const string &strName, const string &strPrefix) const
 {
 	//Find solution by name
 	for (const auto &pPtr : this->m_ObjList)
-	{ 
+	{
 		if (strName == pPtr->iGetName())
-		{ 
+		{
 			::cout << strPrefix << pPtr->iGetDesc() << "\r\n";
 			return;
 		}
@@ -83,7 +82,7 @@ void cSolutionList::iPrintDesc(const string &strName, const string &strPrefix) c
 	//Solution not found, print max-match
 	this->_PrintMaxMatchList(strName);
 }
-void cSolutionList::iPrintList(const string &strPrefix) const
+void cSolutionContainer::iPrintList(const string &strPrefix) const
 {
 	for (auto &pPtr : this->m_ObjList)
 	{

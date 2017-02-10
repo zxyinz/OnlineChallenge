@@ -4,15 +4,23 @@ using namespace std;
 using namespace Leetcode;
 int main(int argc, char** argv)
 {
-	cSolutionList List;
+	cSolutionContainer Container;
+	cTerminal Terminal;
 
 	//Push problem set
-	List.iCreateSolution(static_cast<cSolutionObj*>(new cMaxDepthOfBinaryTree()));
-	List.iCreateSolution(static_cast<cSolutionObj*>(new cMaxPointsOnALine()));
-	List.iCreateSolution(static_cast<cSolutionObj*>(new cProductExceptSelf()));
-	List.iCreateSolution(static_cast<cSolutionObj*>(new cSkyLine()));
+	Container.iCreateSolution(static_cast<cSolutionObj*>(new cMaxDepthOfBinaryTree()));
+	Container.iCreateSolution(static_cast<cSolutionObj*>(new cMaxPointsOnALine()));
+	Container.iCreateSolution(static_cast<cSolutionObj*>(new cProductExceptSelf()));
+	Container.iCreateSolution(static_cast<cSolutionObj*>(new cSkyLine()));
 
-	List.iPrintList("- ");
+	Container.iPrintList("- ");
+
+	Terminal.iPrintBanner();
+
+	while (Terminal.iGetStatus())
+	{
+		Terminal.iProcess();
+	}
 
 	return 0;
 }

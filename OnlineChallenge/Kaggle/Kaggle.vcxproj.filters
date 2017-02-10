@@ -13,5 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\RelyOn">
+      <UniqueIdentifier>{2983667b-7a38-4b8e-a290-adc34c81af8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RelyOn">
+      <UniqueIdentifier>{222d5085-8ffc-495a-9bc0-8a171ada4373}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Kaggle_Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RelyOn\cCSVFileIO.h">
+      <Filter>Header Files\RelyOn</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
