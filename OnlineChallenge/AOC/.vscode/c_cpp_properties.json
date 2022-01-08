@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/Cellar/gcc/9.2.0_3/include/c++/9.2.0/tr1",
+                "/usr/local/Cellar/gcc/9.2.0_3/include/c++/9.2.0",
+                "/usr/local/Cellar/gcc/9.2.0_3/include/c++/9.2.0/x86_64-apple-darwin17"
+            ],
+            "defines": [],
+            "macFrameworkPath": [],
+            "compilerPath": "/usr/local/bin/gcc-9",
+            "cStandard": "gnu17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "macos-gcc-x64",
+            "compilerArgs": [
+                "-std=C++17"
+            ]
+        }
+    ],
+    "version": 4
+}
